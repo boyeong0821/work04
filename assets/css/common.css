@@ -1,0 +1,56 @@
+/* 공통소스 */
+#wrapper{
+    min-width: 320px;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+.inner{
+    max-width: 1024px;
+    padding: 0 22px;
+    margin: 0 auto;
+}
+
+.link-footnote{
+    font-size: 8px;
+    vertical-align: top;
+}
+.link-footnote:hover{
+    color: #06c;
+}
+
+.icon:after, .icon:before, .more:after, .more:before,
+.paddlenav-arrow-previous:before, .paddlenav-arrow-next:before{
+    font-family: 'SF Pro Icons';
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-decoration: underline;
+    position: relative;
+    z-index: 1;
+    alt: "";
+    text-decoration: none;
+}
+
+
+/* mobile */
+@media (max-width:1068px) {
+    .inner{
+        max-width: 736px;
+    }
+}
+
+@media (max-width:734px) {
+    .inner{
+        max-width: 478px;
+    }
+}

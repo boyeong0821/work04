@@ -1,0 +1,58 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+*,
+:after,
+:before{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul{
+    list-style: none;
+}
+
+/* 세팅 */
+body{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    word-break: keep-all;
+    line-height: 1.6;
+    font-family: 'SF Pro KR', 'SF Pro Text', 'SF Pro Icons', Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #1d1d1f;
+    background-color: #fff;
+}

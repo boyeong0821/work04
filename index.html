@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watch Series 9</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+
+    <script src="./assets/js/applewatch.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header-inner">
+                <nav class="top">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="./index.html">
+                                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg>
+                                <span class="blind">apple</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">스토어</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Mac</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">iPad</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">iPhone</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Watch</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">AirPods</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">TV 및 홈</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">엔터테인먼트</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">엑세서리</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">고객지원</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44"><path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path></svg>
+                                <span class="blind">검색하기</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" role="button">
+                                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"></path></svg>
+                                <span class="blind">장바구니</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav class="mobile-menu">
+                <a href="./index.html" class="home">
+                    <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg>
+                    <span class="blind">apple</span>
+                </a>
+
+                <ul class="util-list">
+                    <li class="util-item">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44"><path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path></svg>
+                            <span class="blind">검색하기</span>
+                        </button>
+                    </li>
+                    <li class="util-item">
+                        <button>
+                            <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"></path></svg>
+                            <span class="blind">장바구니</span>
+                        </button>
+                    </li>
+                    <li class="util-item">
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18"><polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom"><animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate><animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate></polyline><polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top"><animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate><animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate></polyline></svg>
+                            <span class="blind">모바일 메뉴 열기</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav class="header-bottom">
+            <div class="header-inner">
+                <div class="flex">
+                    <h1 class="headline">
+                        <a href="./index.html">Apple Watch Series 9</a>
+                    </h1>
+
+                    <ul class="spec-list">
+                        <li class="spec-item">
+                            <a href="" class="on">개요</a>
+                        </li>
+                        <li class="spec-item">
+                            <a href="">Apple Watch를 선택하는 이유</a>
+                        </li>
+                        <li class="spec-item">
+                            <a href="">제품 사양</a>
+                        </li>
+                        <li class="spec-item">
+                            <a href="" class="buy">구입하기</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn-list">
+                        <svg viewBox="0 0 16 9" data-chevron-icon="" xmlns="http://www.w3.org/2000/svg">
+                            <polyline shape-rendering="geometricPrecision" data-chevron-icon-shape="" stroke="currentColor" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="15.265 .835 8 8.167 .735 .835">
+                                <animate data-chevron-animate="expand" attributeName="points" values="15.265 .835 8 8.167 .735 .835;
+                                            15.25 4.5 8 4.5 .75 4.5;
+                                            15.265 8.165 8 .835 .735 8.165" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                            0.5;
+                                            1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                0.2, 1, 0.68, 1"></animate>
+                                <animate data-chevron-animate="collapse" attributeName="points" values="15.265 8.165 8 .835 .735 8.165;
+                                            15.25 4.5 8 4.5 .75 4.5;
+                                            15.265 .835 8 8.167 .735 .835" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                            0.5;
+                                            1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                0.2, 1, 0.68, 1"></animate>
+                            </polyline>
+                        </svg>
+                        <span class="blind">리스트 메뉴 열기</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+        <main id="container">
+            <section class="sc-intro">
+                <h2 class="blind">제품 광고</h2>
+
+                <div class="inner">
+                    <div class="content1">
+                        <div class="sticky">
+                            <h3 class="product-logo">
+                                <img src="./assets/images/product-logo.png" alt="Apple Watch Series 9">
+                            </h3>
+                            <div class="video-area">
+                                <video id="introVideo1" autoplay muted src="./assets/video/intro1.mp4"></video>
+                            </div>
+                            <p class="tagline">
+                                보다 똑똑.<br>
+                                보다 또렷.<br>
+                                보다 강력.
+                            </p>
+                            <div class="text-wrap">
+                                <p class="desc">
+                                    Apple Watch 사상 가장 강력한 성능의 칩. 화면을 터치하지 않고도 Apple Watch를 다루는 신박한 방법. 두 배 더 밝은 디스플레이. 여기에 이제 탄소 중립 케이스 및 밴드를 조합할 수 있는 옵션까지.
+                                </p>
+                                <div class="link-area">
+                                    <a href="" class="link-video">
+                                        동영상 보기<span class="icon icon-after icon icon-playcircle"></span>
+                                    </a>
+                                    <a href="" class="link-event">
+                                        이벤트 신청하기<span class="icon icon-after more"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content2">
+                        <div class="title-wrap">
+                            <h3 class="title">S9 SiP</h3>
+                            <strong class="sub-title">
+                                강력하게<br>
+                                앞서 나아가다.
+                            </strong>
+                        </div>
+                        <div class="video-area">
+                            <video autoplay muted src="./assets/video/intro2.mp4"></video>
+                        </div>
+                        <p class="desc">
+                            Apple Watch Series 9을 더 강력하고, 더 직관적이고, 더 빠르게 만들어주는 전용 Apple Silicon. 듀얼 코어 CPU에는 S8 칩보다 60% 더 많아진 56억 개의 트랜지스터가 집적되어 있습니다. 그리고 4코어 Neural Engine은 머신 러닝 작업을 최대 두 배 더 빠르게 처리하죠. ‘더블 탭’ 제스처를 포함해 수많은 혁신이 가능한 이유입니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content3">
+                    <div class="inner">
+                        <div class="title-wrap">
+                            <h3 class="title">제스처</h3>
+                            <strong class="sub-title">
+                                손끝을 톡톡.<br>
+                                시계를 척척.
+                            </strong>
+                        </div>
+                        <strong class="highlight">더블 탭</strong>
+                    </div>
+                    <div class="video-area">
+                        <video id="introVideo2" autoplay muted src="./assets/video/intro3.mp4"></video>
+                    </div>
+                    <div class="control-area">
+                        <button class="btn-pause">일시정지<span class="slot-pause icon icon-after icon-pausecircle stack-item"></span></button>
+                        <button class="btn-play">재생<span class="slot-play icon icon-after icon-playcircle stack-item"></span></button>
+                        <button class="btn-replay">다시재생<span class="slot-replay icon icon-after icon-replay stack-item"></span></button>
+                    </div>
+                    <div class="inner">
+                        <p class="desc">
+                            이제 제스처로 언제든 Apple Watch를 더욱 간편하게 다룰 수 있습니다. 특히 양손 모두 바쁠 때 아주 요긴하죠. 엄지와 검지를 두 번 탭하는 것만으로 전화 받기, 알림 열기, 음악 재생 및 일시 정지 등이 가능하니까요.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content4">
+                    <div class="sticky">
+                        <div class="text-wrap">
+                            <p class="text-music">장 보면서<br class="m"> 음악 재생 및<br>일시 정지하기.</p>
+                            <p class="text-call">패들보드 타는 중에<br>전화 받기.</p>
+                            <p class="text-timer">국 젓는 동안<br>타이머 중단하기.</p>
+                            <p class="text-message">반려견 산책시키면서<br>메시지에 답장하기.</p>
+                            <p class="text-stack">아기를 안고 있는 상태에서<br>스마트 스택 확인하기.</p>
+                        </div>
+
+                        <div class="content-img">
+                            <img src="./assets/images/content4.jpg" alt class="bg">
+                            <div class="img-wrap">
+                                <div class="music-wrap mask">
+                                    <img src="./assets/images/content4-music.jpg" alt class="image-music">
+                                </div>
+                                <div class="call-wrap mask">
+                                    <img src="./assets/images/content4-call.jpg" alt class="image-call">
+                                </div>
+                                <div class="timer-wrap mask">
+                                    <img src="./assets/images/content4-timer.jpg" alt class="image-timer">
+                                </div>
+                                <div class="message-wrap mask">
+                                    <img src="./assets/images/content4-message.jpg" alt class="image-message">
+                                </div>
+                                <div class="stack-wrap mask">
+                                    <img src="./assets/images/content4-stack.jpg" alt class="image-stack">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content5">
+                    <div class="thumb">
+                        <img src="./assets/images/content5.jpg" alt>
+                    </div>
+
+                    <div class="text-wrap">
+                        <h3 class="title">2배 더 밝은 디스플레이</h3>
+                        <strong class="sub-title">찬란한 혁신.</strong>
+                        <p class="desc">
+                            Series 9의 앞선 디스플레이 시스템은 디스플레이의 최대 밝기를 Series 8의 두 배로, 최대 2000 니트까지 높여줍니다. 덕분에 쨍한 햇빛 아래에서도 화면 내용을 더 쉽게 읽을 수 있죠. 또한, 밝기를 불과 1 니트까지 낮춰 영화관 같은 저조도 환경에서도 더욱 보기 편하게 해줍니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="inner">
+                    <div class="content6">
+                        <div class="thumb">
+                            <img src="./assets/images/content6.png" alt>
+                        </div>
+                        <p class="desc">
+                            <strong>당신만의 iPhone. 어딨는지 콕 집어내다.</strong>
+                            2세대 초광대역 칩이 가능케 하는 ‘정밀 탐색’ 기능. 덕분에 iPhone이 어디에 있는지 모를 경우, 시계가 대략적인 거리와 방향을 알려줌으로써 당신의 iPhone으로 인도해 줄 수 있습니다.1 그리고 당신의 iPhone에 가까워지면 시계가 햅틱 피드백, 음성 신호 그리고 시각 정보를 통해 iPhone 위치를 정확히 파악할 수 있게 도와주죠.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content7">
+                    <div class="inner">
+                        <div class="title-wrap">
+                            <h3 class="title">watchOS 10</h3>
+                            <strong class="sub-title">재탄생하다.<br>탄성을 자아내다.</strong>
+                        </div>
+                        <div class="video-area">
+                            <img src="./assets/images/content7.jpg" alt>
+                            <div class="video-wrap">
+                                <video autoplay muted src="./assets/video/intro4.mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content8">
+                    <div class="slide"></div>
+                    <div class="inner">
+                        <p class="desc">
+                            그 어느 때보다 많은 것을 시계 화면에 담을 수 있게 해주는 watchOS 10. 사실상 모든 앱이 완전히 새롭게 단장돼 더 풍부한 정보를 한눈에 볼 수 있습니다. 그리고 어떤 시계 페이스에서든 간단히 Digital Crown을 돌리기만 하면, ‘스마트 스택’에 정렬된 위젯들을 통해 필요한 정보를 필요한 순간에 확인할 수 있죠. 게다가 정신 건강 및 시력 건강에 대한 통찰까지 제공해, 당신의 몸과 마음 상태를 손목 위에서 바로 챙길 수 있답니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-carbon">
+                <div class="intro">
+                    <div class="sticky">
+                        <div class="bg-area">
+                            <span id="lottie"></span>
+                        </div>
+
+                        <div class="text-wrap">
+                            <strong class="text-first">Apple Watch로<br class="m"> 내디딘 첫 걸음.</strong>
+                            <strong class="text-second">2030년을 향한<br class="m"> 큰 도약.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner">
+                    <div class="content">
+                        <h2 class="sc-title">
+                            <img src="./assets/images/carbon-neutral.png" alt="Carbon Neutral">
+                        </h2>
+                        <div class="thumb">
+                            <img src="./assets/images/carbon.jpg" alt>
+                        </div>
+                        <div class="text-wrap">
+                            <strong class="sub-title">Apple 최초의<br>탄소 중립 제품 등장.</strong>
+                            <div class="flex">
+                                <p class="desc">
+                                    소재, 청정 에너지, 저탄소 운송 분야에서의 지속적인 혁신 덕분에, Apple Watch는 탄소 중립 케이스 및 밴드 조합 옵션이 제공됩니다.
+                                </p>
+                                <button class="btn-more">자세히 알아보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-health">
+                <div class="top">
+                    <div class="inner">
+                        <div class="text-wrap">
+                            <div class="title-wrap">
+                                <h2 class="sc-title">건강</h2>
+                                <strong class="sub-title">강력한 통찰을<br class="m"> 한눈에.</strong>
+                            </div>
+                            <p class="desc">
+                                Apple Watch는 당신의 정신 건강 및 신체 건강에 대해 더욱 잘 이해할 수 있도록 도와줍니다. 물론 건강 데이터는 당신만의 것으로 안전하게 보호되죠. 그리고 당신의 건강 데이터를 소중한 친구 또는 가족과 공유하려고 할 때도, 당신만이 모든 권한을 관리할 수 있습니다.</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg"></div>
+                </div>
+
+                <div class="bottom">
+                    <div class="inner">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <p class="desc">
+                                        <strong>당신의 심장을 예의 주시하다.</strong>
+                                        Apple Watch Series 9은 ‘심전도’ 앱을 통해 단일 전극 심전도계와 유사한 심전도를 생성할 수 있습니다.<a href="" class="link-footnote">4</a> 그리고 ‘심박수’ 앱으로 고심박수 및 저심박수, 불규칙한 박동에 대한 알림을 보내주죠.<a href="" class="link-footnote">5</a>
+                                    </p>
+                                    <div class="video-area">
+                                        <video autoplay muted src="./assets/video/health1.mp4"></video>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide2">
+                                    <p class="desc">
+                                        <strong>혈중 산소 포화도 측정. 살아 숨쉬는 혁신.</strong>
+                                        Apple Watch Series 9에 탑재된 탁월한 센서와 앱은 밤이든 낮이든, 수시로 당신의 혈중 산소 포화도를 측정하는 것은 물론, 원할 때마다 그 자리에서 측정할 수 있게 해줍니다.<a href="" class="link-footnote">6</a>
+                                    </p>
+                                    <div class="thumb">
+                                        <img src="./assets/images/health2.jpg" alt>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide3">
+                                    <p class="desc">
+                                        <strong>꿈의 기기.</strong>
+                                        ‘수면’ 앱의 역할은 수면 시간 기록에만 국한되지 않습니다. 자는 동안 ‘REM 수면’, ‘코어 수면’, ‘깊은 수면’ 상태에서 각각 얼마나 많은 시간을 보냈는지 그리고 언제 잠을 깬 것으로 보이는지도 기록으로 보여줍니다.
+                                    </p>
+                                    <div class="thumb">
+                                        <img src="./assets/images/health3.jpg" alt>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide4">
+                                    <p class="desc">
+                                        <strong>자신의 생리 주기를 이해할 수 있도록.</strong>
+                                        Apple Watch Series 9에는 당신이 잠을 자는 동안 심박수 및 손목 온도의 변화를 분석하는 센서들이 탑재되어 있습니다.<a href="" class="link-footnote">7</a> 덕분에 시간의 흐름에 따른 온도 변화를 확인할 수 있죠. ‘생리 주기 추적’ 기능은 이 데이터를 활용해 사용자의 배란일을 후향적으로 추정해 주며, 이는 임신계획을 세우는데 도움이 될 수 있습니다.<a href="" class="link-footnote">8</a>
+                                    </p>
+                                </div>
+
+                                <div class="swiper-slide slide5">
+                                    <p class="desc">
+                                        <strong>자신의 마음 상태 기록하기.</strong>
+                                        Apple Watch의 ‘마음 챙기기’ 앱에서 여러 가지 다른 기분을 나타내는 매력적인 이미지를 스크롤하여 순간의 감정과 그날의 기분을 기록할 수 있습니다. 당신의 마음 상태를 꾸준히 기록할 수 있도록, 알림과 시계 페이스상의 컴플리케이션을 통해 도움을 받을 수도 있죠.
+                                    </p>
+                                    <div class="thumb">
+                                        <img src="./assets/images/health5.jpg" alt>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-area">
+                                <button class="btn-prev paddlenav-arrow-previous"><span class="blind">이전</span></button>
+                                <button class="btn-next paddlenav-arrow-next"><span class="blind">다음</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-commu">
+                <div class="inner">
+                    <div class="top">
+                        <div class="title-wrap">
+                            <h2 class="sc-title">소통</h2>
+                            <strong class="sub-title">빠릿하게 당신의<br>일상과 함께하다.</strong>
+                        </div>
+                        <div class="thumb">
+                            <img src="./assets/images/commu-top.png" alt>
+                        </div>
+                        <p class="desc">
+                            Apple Watch는 당신에게 소중한 사람 및 중요한 일을 놓치지 않고 챙길 수 있게 해줍니다. 손목 위에서 바로 말이죠. 그리고 셀룰러 요금제에 가입되어 있다면, iPhone이 곁에 없어도 이 모든 일을 할 수 있답니다.<a href="" class="link-footnote">9</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="inner">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <p class="desc">
+                                        <strong>셀룰러가 선사하는 자유.</strong>
+                                        산행 도중에 전화를 받거나, 러닝 중에 문자 메시지에 답하거나, 집 앞을 산책하며 알림을 확인할 수 있습니다. 폰 없이도 문제없죠.
+                                    </p>
+                                    <div class="thumb">
+                                        <img src="./assets/images/commu1.jpg" alt>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide2">
+                                    <p class="desc">
+                                        <strong>음악 및 팟캐스트 스트리밍하기.</strong>
+                                        Apple Music에 있는 1억 곡 이상의 음악으로 삶에 활기를 불어넣어 보세요.10 최신 팟캐스트도 놓치지 않고 들을 수 있죠.
+                                    </p>
+                                </div>
+
+                                <div class="swiper-slide slide3">
+                                    <p class="desc">
+                                        <strong>결제도 손쉽게.</strong>
+                                        이제 거의 어디에서든 지갑을 주머니에서 꺼낼 필요가 없습니다. Apple Pay로 손목에서 바로 결제할 수 있으니까요.<a href="" class="link-footnote">11</a>
+                                    </p>
+                                    <div class="thumb">
+                                        <img src="./assets/images/commu3.jpg" alt>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide4">
+                                    <p class="desc">
+                                        <strong>손목의 인도를 받아.</strong>
+                                        Apple 지도는 햅틱 피드백으로 턴 바이 턴 길 안내를 해줄 수 있습니다. 덕분에 굳이 시계를 들어 쳐다보지 않아도, 어디로 가야 하는지 정확히 알 수 있죠.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="control-area">
+                                <button class="btn-prev paddlenav-arrow-previous"><span class="blind">이전</span></button>
+                                <button class="btn-next paddlenav-arrow-next"><span class="blind">다음</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-fitness">
+                <div class="top">
+                    <img src="./assets/images/fitness-bg.jpg" alt class="bg">
+
+                    <div class="inner">
+                        <div class="text-wrap">
+                            <div class="title-wrap">
+                                <h2 class="sc-title">피트니스</h2>
+                                <strong class="sub-title">동기 부여란<br class="pc"> 이런 것.</strong>
+                            </div>
+                            <p class="desc">어떤 운동을 염두에 두고 있든, 손목 위에 있기 마련. 탭 한 번으로 원하는 운동을 바로 시작해 보세요. 꾸준히 의욕을 북돋는 데 필요한 모든 수치를 맞춤형 보기 화면으로 확인해 가면서 말이죠. 게다가 Apple Watch의 뛰어난 내구성 덕분에 언제든 전력을 다해 운동을 즐길 수 있습니다. Apple Watch가 얼마나 버틸 수 있을지 진땀 뺄 필요 없답니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="inner">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <li class="swiper-slide slide1">
+                                    <p class="desc">
+                                        <strong>스쿼트, 스피닝, 스텝퍼까지.</strong>
+                                        근력 강화 운동과 고강도 인터벌 트레이닝부터 필라테스, 명상에 이르기까지, Apple Watch는 건강하게 운동할 수 있는 다양한 방법을 제공합니다. 그리고 항상 운동별로 가장 도움이 되는 수치들을 보여주죠.
+                                    </p>
+                                    <div class="video-area">
+                                        <video autoplay muted src="./assets/video/fitness1.mp4"></video>
+                                    </div>
+                                </li>
+
+                                <li class="swiper-slide slide2">
+                                    <p class="desc">
+                                        <strong>견고함 이상의 견고함.</strong>
+                                        앞면 크리스털, 기하학적 탄탄함 그리고 평평한 바닥면은 Apple Watch가 깨짐에 잘 견딜 수 있게 해줍니다. 여기에 50m 방수 등급까지 갖추었다는 사실.
+                                    </p>
+                                </li>
+
+                                <li class="swiper-slide slide3">
+                                    <p class="desc">
+                                        <strong>운동 현황. 더 많은 것을 보고, 더 멀리 나아가다.</strong>
+                                        디스플레이를 통해 ‘심박수 영역’ 및 맞춤 설정한 인터벌과 같이 운동 중에 필요한 모든 수치를 한눈에 볼 수 있습니다. 간단히 Digital Crown을 돌려 ‘세그먼트 및 스플릿’, ‘고도’, ‘활동’ 링 등의 수치를 확인할 수 있죠.
+                                    </p>
+                                    <div class="thumb">
+                                        <img class="pc" src="./assets/images/fitness3.jpg" alt>
+                                        <img class="m" src="./assets/images/fitness3-m.jpg" alt>
+                                    </div>
+                                </li>
+
+                                <li class="swiper-slide slide4">
+                                    <p class="desc">
+                                        <strong>실시간 현황.</strong>
+                                        Apple Watch에서 사이클링 운동을 시작하면, 해당 내용이 iPhone에 ‘실시간 현황’으로 자동 표시됩니다. 실시간 현황은 탭하면 전체 화면으로 확대됩니다. 덕분에 자전거를 타는 동안 수치를 더 쉽게 확인할 수 있게 되죠.
+                                    </p>
+                                    <div class="thumb">
+                                        <img class="pc" src="./assets/images/fitness4.jpg" alt>
+                                        <img class="m" src="./assets/images/fitness4-m.jpg" alt>
+                                    </div>
+                                </li>
+                            </div>
+
+                            <div class="control-area">
+                                <button class="btn-prev paddlenav-arrow-previous"><span class="blind">이전</span></button>
+                                <button class="btn-next paddlenav-arrow-next"><span class="blind">다음</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-safety">
+                <div class="inner">
+                    <div class="top">
+                        <div class="text-wrap">
+                            <h2 class="sc-title">안전</h2>
+                            <div class="flex">
+                                <strong class="sub-title">도움의 손길은<br>손목 위에.</strong>
+                                <p class="desc">넘어지거나, 자동차 충돌 사고가 나거나, 위급한 상황에서 도움이 필요할 때, Series 9은 당신이 필요한 순간에 대신 구조 요청을 해줄 수 있습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="thumb">
+                            <img src="./assets/images/safety-top.jpg" alt>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="inner">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <li class="swiper-slide slide1">
+                                    <p class="desc">
+                                        <strong>충돌 감지.</strong>
+                                        Apple Watch Series 9은 심각한 자동차 충돌이 발생하면 이를 감지할 수 있습니다. 차량 탑승 중에 심각한 충돌이 감지된 경우, 자동으로 응급 서비스에 연결해 상담원에게 당신의 위치를 알려주고, 긴급 연락처에 알림까지 전송해 줍니다.<a href="" class="link-footnote">12</a>
+                                    </p>
+                                </li>
+                                <li class="swiper-slide slide2">
+                                    <p class="desc">
+                                        <strong>넘어짐 감지.</strong>
+                                        Apple Watch Series 9은 당신이 심하게 넘어진 경우를 감지할 수 있습니다. 몸을 움직일 수 없다고 판단하면 긴급 구조 요청까지 보내주죠.<a href="" class="link-footnote">12</a> 그리고 ‘운동’ 앱 사용 시 격렬한 운동 동작과 실제 넘어짐을 구분할 수 있도록 최적화되어 있습니다.
+                                    </p>
+                                    <div class="thumb">
+                                        <img src="./assets/images/safety2.jpg" alt>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide slide3">
+                                    <p class="desc">
+                                        <strong>긴급 구조 요청.</strong>
+                                        긴급 구조 요청을 이용하면 Apple Watch가 현지 응급 서비스에 전화를 걸어 당신의 위치를 공유합니다. 측면 버튼을 길게 눌러 도움을 요청할 수 있죠.
+                                    </p>
+                                </li>
+                            </div>
+
+                            <div class="control-area">
+                                <button class="btn-prev paddlenav-arrow-previous"><span class="blind">이전</span></button>
+                                <button class="btn-next paddlenav-arrow-next"><span class="blind">다음</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-preview">
+                <div class="content">
+                    <div class="text-wrap">
+                        <h2 class="sc-title">
+                            Apple Watch<br>
+                            Series 9의 모습,<br>
+                            AR로 미리 보기.
+                        </h2>
+                        <p class="desc">이 페이지를 iPhone 또는 iPad의<br>Safari로 열어보세요.</p>
+                    </div>
+
+                    <div class="thumb">
+                        <img src="./assets/images/preview.jpg" alt>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-credit">
+                <div class="content">
+                    <div class="text-wrap">
+                        <h2 class="sc-title">
+                            새 Apple Watch<br>
+                            구매 시 사용할 수 있는<br>
+                            최대 ₩210,000 상당의<br>
+                            크레딧을 받는 법.<a href="" class="link-footnote">13</a>
+                        </h2>
+                        <p class="desc">Apple Trade In을 통해 보상 판매 대상<br>Apple Watch를 새 Apple Watch 구매 시<br>쓸 수 있는 크레딧으로 교환할 수 있습니다.<br>기기의 가치를 최대한 활용하는 것,<br>당신은 물론 지구에게도 좋은 일이죠.</p>
+                        <a href="" class="link-credit">
+                            보상 판매 가격 알아보기
+                            <span class="icon icon-after more"></span>
+                        </a>
+                    </div>
+
+                    <div class="thumb">
+                        <img src="./assets/images/credit.jpg" alt>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-studio">
+                <h2 class="sc-title">Apple Watch Studio</h2>
+
+                <strong class="sub-title">
+                    다양한 케이스, 다양한 밴드로<br>
+                    스타일 연출도 자유롭게.
+                </strong>
+
+                <div class="link-wrap">
+                    <a href="" class="link-studio">
+                        <span>자신만의 스타일 만들기</span>
+                    </a>
+                </div>
+
+                <div class="slide-area">
+                    <div class="slide"></div>
+
+                    <div class="object">
+                        <img src="./assets/images/object.png" alt>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-lineup">
+                <div class="inner">
+                    <h2 class="sc-title">당신에게 알맞은<br class="m"> Apple Watch는?</h2>
+
+                    <div class="content pc">
+                        <div class="product">
+                            <img src="./assets/images/product1.jpg" alt>
+                            <div class="color" role="img">
+                                <span class="midnight"><span class="blind">미드나이트</span></span>
+                                <span class="starlight"><span class="blind">스타라이트</span></span>
+                                <span class="silver"><span class="blind">실버</span></span>
+                            </div>
+                            <strong class="name">Apple Watch<br class="m"> SE</strong>
+                            <p class="desc">
+                                꼭 필요한 기능은 다 있다.<br>
+                                부담은 없다.
+                            </p>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/product2.jpg" alt>
+                            <div class="color" role="img">
+                                <span class="midnight"><span class="blind">미드나이트</span></span>
+                                <span class="starlight"><span class="blind">스타라이트</span></span>
+                                <span class="silver"><span class="blind">실버</span></span>
+                                <span class="pink"><span class="blind">핑크</span></span>
+                                <span class="red"><span class="blind">레드</span></span>
+                                <span class="stainless-graphite"><span class="blind">스테인리스 그래파이트</span></span>
+                                <span class="stainless-silver"><span class="blind">스테인리스 실버</span></span>
+                                <span class="stainless-gold"><span class="blind">스테인리스 골드</span></span>
+                            </div>
+                            <strong class="name">Apple Watch<br class="m"> Series 9</strong>
+                            <p class="desc">
+                                강력한 센서,<br>
+                                첨단 건강 관련 기능.
+                            </p>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/product3.jpg" alt>
+                            <div class="color" role="img">
+                                <span class="titanium-silver"><span class="blind">티타늄 실버</span></span>
+                            </div>
+                            <strong class="name">Apple Watch<br class="m"> Ultra 2</strong>
+                            <p class="desc">
+                                최강의 내구성,<br>
+                                최고의 기능성.
+                            </p>
+                        </div>
+                        <div class="buy">
+                            <span class="price">₩329,000부터</span>
+                            <a href="" class="link-buy">구입하기</a>
+                            <a href="" class="link-more">
+                                더 알아보기
+                                <span class="icon icon-after more"></span>
+                            </a>
+                        </div>
+                        <div class="buy">
+                            <span class="price">₩599,000부터</span>
+                            <a href="" class="link-buy">구입하기</a>
+                            <a href="" class="link-more">
+                                더 알아보기
+                                <span class="icon icon-after more"></span>
+                            </a>
+                        </div>
+                        <div class="buy">
+                            <span class="price">₩1,149,000</span>
+                            <a href="" class="link-buy">구입하기</a>
+                            <a href="" class="link-more">
+                                더 알아보기
+                                <span class="icon icon-after more"></span>
+                            </a>
+                        </div>
+                        <div class="size">
+                            44mm 또는 40mm<br>
+                            알루미늄 케이스 크기
+                        </div>
+                        <div class="size">
+                            45mm 또는 41mm<br>
+                            알루미늄 또는 스테인리스<br>
+                            스틸 케이스 크기
+                        </div>
+                        <div class="size">
+                            49mm<br>
+                            티타늄 케이스 크기
+                        </div>
+                        <div class="carbon">
+                            <span class="ic-carbon"></span>
+                            <p class="desc">
+                                탄소 중립 조합<br>
+                                선택 가능<a href="" class="link-footnote">2</a>
+                            </p>
+                        </div>
+                        <div class="carbon">
+                            <span class="ic-carbon"></span>
+                            <p class="desc">
+                                탄소 중립 조합<br>
+                                선택 가능<a href="" class="link-footnote">2</a>
+                            </p>
+                        </div>
+                        <div class="carbon">
+                            <span class="ic-carbon"></span>
+                            <p class="desc">
+                                탄소 중립 조합<br>
+                                선택 가능<a href="" class="link-footnote">2</a>
+                            </p>
+                        </div>
+                        <div class="display">
+                            <span class="ic-display1"></span>
+                            <p class="desc">
+                                Retina 디스플레이<br>
+                                최대 1000 니트
+                            </p>
+                        </div>
+                        <div class="display">
+                            <span class="ic-display2"></span>
+                            <p class="desc">
+                                상시표시형 Retina 디스플레이<br>
+                                최대 2000 니트
+                            </p>
+                        </div>
+                        <div class="display">
+                            <span class="ic-display3"></span>
+                            <p class="desc">
+                                상시표시형 Retina 디스플레이<br>
+                                최대 3000 니트
+                            </p>
+                        </div>
+                        <div class="sip">
+                            <span class="ic-s8"></span>
+                            <p class="desc">S8 SiP</p>
+                            <p class="desc">-</p>
+                            <p class="desc">iPhone 찾기</p>
+                        </div>
+                        <div class="sip">
+                            <span class="ic-s9"></span>
+                            <p class="desc">S9 SiP</p>
+                            <p class="desc">더블 탭 제스처</p>
+                            <p class="desc">iPhone 정밀 탐색</p>
+                        </div>
+                        <div class="sip">
+                            <span class="ic-s8"></span>
+                            <p class="desc">S9 SiP</p>
+                            <p class="desc">더블 탭 제스처</p>
+                            <p class="desc">iPhone 정밀 탐색</p>
+                        </div>
+                        <div class="heart-rate">
+                            <span class="ic-heart"></span>
+                            <p class="desc">-</p>
+                            <p class="desc">-</p>
+                            <p class="desc">고심박수 및<br>저심박수 알림</p>
+                            <p class="desc">불규칙한<br>박동 알림<a href="" class="link-footnote">5</a></p>
+                            <p class="desc">저유산소<br>피트니스 알림</p>
+                        </div>
+                        <div class="heart-rate">
+                            <span class="ic-heart"></span>
+                            <p class="desc">혈중 산소 앱<a href="" class="link-footnote">6</a></p>
+                            <p class="desc">심전도 앱<a href="" class="link-footnote">4</a></p>
+                            <p class="desc">고심박수 및<br>저심박수 알림</p>
+                            <p class="desc">불규칙한<br>박동 알림<a href="" class="link-footnote">5</a></p>
+                            <p class="desc">저유산소<br>피트니스 알림</p>
+                        </div>
+                        <div class="heart-rate">
+                            <span class="ic-heart"></span>
+                            <p class="desc">혈중 산소 앱<a href="" class="link-footnote">6</a></p>
+                            <p class="desc">심전도 앱<a href="" class="link-footnote">4</a></p>
+                            <p class="desc">고심박수 및<br>저심박수 알림</p>
+                            <p class="desc">불규칙한<br>박동 알림<a href="" class="link-footnote">5</a></p>
+                            <p class="desc">저유산소<br>피트니스 알림</p>
+                        </div>
+                        <div class="cycle">
+                            <span class="ic-cycle"></span>
+                            <p class="desc">-</p>
+                            <p class="desc">생리 주기 추적<a href="" class="link-footnote">8</a></p>
+                        </div>
+                        <div class="cycle">
+                            <span class="ic-cycle"></span>
+                            <p class="desc">손목 온도 감지<a href="" class="link-footnote">7</a></p>
+                            <p class="desc">생리 주기 추적 및<br>후향적 배란일 추정<a href="" class="link-footnote">8</a></p>
+                        </div>
+                        <div class="cycle">
+                            <span class="ic-cycle"></span>
+                            <p class="desc">손목 온도 감지<a href="" class="link-footnote">7</a></p>
+                            <p class="desc">생리 주기 추적 및<br>후향적 배란일 추정<a href="" class="link-footnote">8</a></p>
+                        </div>
+                        <div class="sos">
+                            <span class="ic-sos"></span>
+                            <p class="desc">긴급 구조 요청<a href="" class="link-footnote">12</a></p>
+                            <p class="desc">국제<br>긴급 구조 요청<a href="" class="link-footnote">14</a></p>
+                            <p class="desc">넘어짐 감지 및<br>충돌 감지<a href="" class="link-footnote">12</a></p>
+                            <p class="desc">-</p>
+                        </div>
+                        <div class="sos">
+                            <span class="ic-sos"></span>
+                            <p class="desc">긴급 구조 요청<a href="" class="link-footnote">12</a></p>
+                            <p class="desc">국제<br>긴급 구조 요청<a href="" class="link-footnote">14</a></p>
+                            <p class="desc">넘어짐 감지 및<br>충돌 감지<a href="" class="link-footnote">12</a></p>
+                            <p class="desc">-</p>
+                        </div>
+                        <div class="sos">
+                            <span class="ic-sos"></span>
+                            <p class="desc">긴급 구조 요청<a href="" class="link-footnote">12</a></p>
+                            <p class="desc">국제<br>긴급 구조 요청<a href="" class="link-footnote">14</a></p>
+                            <p class="desc">넘어짐 감지 및<br>충돌 감지<a href="" class="link-footnote">12</a></p>
+                            <p class="desc">사이렌</p>
+                        </div>
+                        <div class="waterproof">
+                            <span class="ic-50m"></span>
+                            <p class="desc">방수 등급</p>
+                            <p class="desc">수영 최적화<a href="" class="link-footnote">15</a></p>
+                            <p class="desc">-</p>
+                            <p class="desc">-</p>
+                        </div>
+                        <div class="waterproof">
+                            <span class="ic-50m"></span>
+                            <p class="desc">방수 등급</p>
+                            <p class="desc">수영 최적화<a href="" class="link-footnote">17</a></p>
+                            <p class="desc">-</p>
+                            <p class="desc">-</p>
+                        </div>
+                        <div class="waterproof">
+                            <span class="ic-100m"></span>
+                            <p class="desc">방수 등급</p>
+                            <p class="desc">수영 최적화<a href="" class="link-footnote">20</a></p>
+                            <p class="desc">빠른 속도의 수상 및 수중 스포츠</p>
+                            <p class="desc">레크리에이션 다이빙(최대 40m)</p>
+                        </div>
+                        <div class="gps">
+                            <span class="ic-gps"></span>
+                            <p class="desc">GPS</p>
+                            <p class="desc">셀룰러 탑재 모델 선택 가능<a href="" class="link-footnote">9</a></p>
+                        </div>
+                        <div class="gps">
+                            <span class="ic-gps"></span>
+                            <p class="desc">GPS</p>
+                            <p class="desc">셀룰러 탑재 모델 선택 가능<a href="" class="link-footnote">9</a></p>
+                        </div>
+                        <div class="gps">
+                            <span class="ic-gps"></span>
+                            <p class="desc">정밀<br>이중 주파수 GPS</p>
+                            <p class="desc">셀룰러 탑재<a href="" class="link-footnote">9</a></p>
+                        </div>
+                        <div class="battery">
+                            <span class="ic-battery"></span>
+                            <p class="desc">최대 18시간<a href="" class="link-footnote">16</a></p>
+                            <p class="desc">저전력 모드</p>
+                            <p class="desc">-</p>
+                        </div>
+                        <div class="battery">
+                            <span class="ic-battery"></span>
+                            <p class="desc">최대 18시간<a href="" class="link-footnote">18</a></p>
+                            <p class="desc">저전력 모드에서<br>최대 36시간<a href="" class="link-footnote">18</a></p>
+                            <p class="desc">급속 충전<a href="" class="link-footnote">19</a></p>
+                        </div>
+                        <div class="battery">
+                            <span class="ic-battery"></span>
+                            <p class="desc">최대 36시간<a href="" class="link-footnote">21</a></p>
+                            <p class="desc">저전력 모드에서<br>최대 72시간<a href="" class="link-footnote">21</a></p>
+                            <p class="desc">급속 충전<a href="" class="link-footnote">22</a></p>
+                        </div>
+                    </div>
+                    <div class="content m">
+                        <div class="top">
+                            <div class="product">
+                                <img src="./assets/images/product1.jpg" alt>
+                                <div class="color" role="img">
+                                    <span class="midnight"><span class="blind">미드나이트</span></span>
+                                    <span class="starlight"><span class="blind">스타라이트</span></span>
+                                    <span class="silver"><span class="blind">실버</span></span>
+                                </div>
+                                <strong class="name">Apple Watch<br class="m"> SE</strong>
+                                <p class="desc">
+                                    꼭 필요한 기능은 다 있다.<br>
+                                    부담은 없다.
+                                </p>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/product2.jpg" alt>
+                                <div class="color" role="img">
+                                    <span class="midnight"><span class="blind">미드나이트</span></span>
+                                    <span class="starlight"><span class="blind">스타라이트</span></span>
+                                    <span class="silver"><span class="blind">실버</span></span>
+                                    <span class="pink"><span class="blind">핑크</span></span>
+                                    <span class="red"><span class="blind">레드</span></span>
+                                    <span class="stainless-graphite"><span class="blind">스테인리스 그래파이트</span></span>
+                                    <span class="stainless-silver"><span class="blind">스테인리스 실버</span></span>
+                                    <span class="stainless-gold"><span class="blind">스테인리스 골드</span></span>
+                                </div>
+                                <strong class="name">Apple Watch<br class="m"> Series 9</strong>
+                                <p class="desc">
+                                    강력한 센서,<br>
+                                    첨단 건강 관련 기능.
+                                </p>
+                            </div>
+                            <div class="buy">
+                                <span class="price">₩329,000부터</span>
+                                <a href="" class="link-buy">구입하기</a>
+                                <a href="" class="link-more">
+                                    더 알아보기
+                                    <span class="icon icon-after more"></span>
+                                </a>
+                            </div>
+                            <div class="buy">
+                                <span class="price">₩599,000부터</span>
+                                <a href="" class="link-buy">구입하기</a>
+                                <a href="" class="link-more">
+                                    더 알아보기
+                                    <span class="icon icon-after more"></span>
+                                </a>
+                            </div>
+                            <div class="size">
+                                44mm 또는 40mm<br>
+                                알루미늄 케이스 크기
+                            </div>
+                            <div class="size">
+                                45mm 또는 41mm<br>
+                                알루미늄 또는 스테인리스<br>
+                                스틸 케이스 크기
+                            </div>
+                            <div class="carbon">
+                                <span class="ic-carbon"></span>
+                                <p class="desc">
+                                    탄소 중립 조합<br>
+                                    선택 가능<a href="" class="link-footnote">2</a>
+                                </p>
+                            </div>
+                            <div class="carbon">
+                                <span class="ic-carbon"></span>
+                                <p class="desc">
+                                    탄소 중립 조합<br>
+                                    선택 가능<a href="" class="link-footnote">2</a>
+                                </p>
+                            </div>
+                            <div class="display">
+                                <span class="ic-display1"></span>
+                                <p class="desc">
+                                    Retina 디스플레이<br>
+                                    최대 1000 니트
+                                </p>
+                            </div>
+                            <div class="display">
+                                <span class="ic-display2"></span>
+                                <p class="desc">
+                                    상시표시형 Retina 디스플레이<br>
+                                    최대 2000 니트
+                                </p>
+                            </div>
+                            <div class="sip">
+                                <span class="ic-s8"></span>
+                                <p class="desc">S8 SiP</p>
+                                <p class="desc">-</p>
+                                <p class="desc">iPhone 찾기</p>
+                            </div>
+                            <div class="sip">
+                                <span class="ic-s9"></span>
+                                <p class="desc">S9 SiP</p>
+                                <p class="desc">더블 탭 제스처</p>
+                                <p class="desc">iPhone 정밀 탐색</p>
+                            </div>
+                            <div class="heart-rate">
+                                <span class="ic-heart"></span>
+                                <p class="desc">-</p>
+                                <p class="desc">-</p>
+                                <p class="desc">고심박수 및<br>저심박수 알림</p>
+                                <p class="desc">불규칙한<br>박동 알림<a href="" class="link-footnote">5</a></p>
+                                <p class="desc">저유산소<br>피트니스 알림</p>
+                            </div>
+                            <div class="heart-rate">
+                                <span class="ic-heart"></span>
+                                <p class="desc">혈중 산소 앱<a href="" class="link-footnote">6</a></p>
+                                <p class="desc">심전도 앱<a href="" class="link-footnote">4</a></p>
+                                <p class="desc">고심박수 및<br>저심박수 알림</p>
+                                <p class="desc">불규칙한<br>박동 알림<a href="" class="link-footnote">5</a></p>
+                                <p class="desc">저유산소<br>피트니스 알림</p>
+                            </div>
+                            <div class="cycle">
+                                <span class="ic-cycle"></span>
+                                <p class="desc">-</p>
+                                <p class="desc">생리 주기 추적<a href="" class="link-footnote">8</a></p>
+                            </div>
+                            <div class="cycle">
+                                <span class="ic-cycle"></span>
+                                <p class="desc">손목 온도 감지<a href="" class="link-footnote">7</a></p>
+                                <p class="desc">생리 주기 추적 및<br>후향적 배란일 추정<a href="" class="link-footnote">8</a></p>
+                            </div>
+                            <div class="sos">
+                                <span class="ic-sos"></span>
+                                <p class="desc">긴급 구조 요청<a href="" class="link-footnote">12</a></p>
+                                <p class="desc">국제<br>긴급 구조 요청<a href="" class="link-footnote">14</a></p>
+                                <p class="desc">넘어짐 감지 및<br>충돌 감지<a href="" class="link-footnote">12</a></p>
+                                <p class="desc">-</p>
+                            </div>
+                            <div class="sos">
+                                <span class="ic-sos"></span>
+                                <p class="desc">긴급 구조 요청<a href="" class="link-footnote">12</a></p>
+                                <p class="desc">국제<br>긴급 구조 요청<a href="" class="link-footnote">14</a></p>
+                                <p class="desc">넘어짐 감지 및<br>충돌 감지<a href="" class="link-footnote">12</a></p>
+                                <p class="desc">-</p>
+                            </div>
+                            <div class="waterproof">
+                                <span class="ic-50m"></span>
+                                <p class="desc">방수 등급</p>
+                                <p class="desc">수영 최적화<a href="" class="link-footnote">15</a></p>
+                                <p class="desc">-</p>
+                                <p class="desc">-</p>
+                            </div>
+                            <div class="waterproof">
+                                <span class="ic-50m"></span>
+                                <p class="desc">방수 등급</p>
+                                <p class="desc">수영 최적화<a href="" class="link-footnote">17</a></p>
+                                <p class="desc">-</p>
+                                <p class="desc">-</p>
+                            </div>
+                            <div class="gps">
+                                <span class="ic-gps"></span>
+                                <p class="desc">GPS</p>
+                                <p class="desc">셀룰러 탑재 모델 선택 가능<a href="" class="link-footnote">9</a></p>
+                            </div>
+                            <div class="gps">
+                                <span class="ic-gps"></span>
+                                <p class="desc">GPS</p>
+                                <p class="desc">셀룰러 탑재 모델 선택 가능<a href="" class="link-footnote">9</a></p>
+                            </div>
+                            <div class="battery">
+                                <span class="ic-battery"></span>
+                                <p class="desc">최대 18시간<a href="" class="link-footnote">16</a></p>
+                                <p class="desc">저전력 모드</p>
+                                <p class="desc">-</p>
+                            </div>
+                            <div class="battery">
+                                <span class="ic-battery"></span>
+                                <p class="desc">최대 18시간<a href="" class="link-footnote">18</a></p>
+                                <p class="desc">저전력 모드에서<br>최대 36시간<a href="" class="link-footnote">18</a></p>
+                                <p class="desc">급속 충전<a href="" class="link-footnote">19</a></p>
+                            </div>
+                        </div>
+
+                        <div class="bottom">
+                            <div class="product">
+                                <img src="./assets/images/product3.jpg" alt>
+                                <div class="color" role="img">
+                                    <span class="titanium-silver"><span class="blind">티타늄 실버</span></span>
+                                </div>
+                                <strong class="name">Apple Watch<br class="m"> Ultra 2</strong>
+                                <p class="desc">
+                                    최강의 내구성,<br>
+                                    최고의 기능성.
+                                </p>
+                            </div>
+                            <div></div>
+                            <div class="buy">
+                                <span class="price">₩1,149,000</span>
+                                <a href="" class="link-buy">구입하기</a>
+                                <a href="" class="link-more">
+                                    더 알아보기
+                                    <span class="icon icon-after more"></span>
+                                </a>
+                            </div>
+                            <div></div>
+                            <div class="size">
+                                49mm<br>
+                                티타늄 케이스 크기
+                            </div>
+                            <div></div>
+                            <div class="carbon">
+                                <span class="ic-carbon"></span>
+                                <p class="desc">
+                                    탄소 중립 조합<br>
+                                    선택 가능<a href="" class="link-footnote">2</a>
+                                </p>
+                            </div>
+                            <div></div>
+                            <div class="display">
+                                <span class="ic-display3"></span>
+                                <p class="desc">
+                                    상시표시형 Retina 디스플레이<br>
+                                    최대 3000 니트
+                                </p>
+                            </div>
+                            <div></div>
+                            <div class="sip">
+                                <span class="ic-s8"></span>
+                                <p class="desc">S9 SiP</p>
+                                <p class="desc">더블 탭 제스처</p>
+                                <p class="desc">iPhone 정밀 탐색</p>
+                            </div>
+                            <div></div>
+                            <div class="heart-rate">
+                                <span class="ic-heart"></span>
+                                <p class="desc">혈중 산소 앱<a href="" class="link-footnote">6</a></p>
+                                <p class="desc">심전도 앱<a href="" class="link-footnote">4</a></p>
+                                <p class="desc">고심박수 및<br>저심박수 알림</p>
+                                <p class="desc">불규칙한<br>박동 알림<a href="" class="link-footnote">5</a></p>
+                                <p class="desc">저유산소<br>피트니스 알림</p>
+                            </div>
+                            <div></div>
+                            <div class="cycle">
+                                <span class="ic-cycle"></span>
+                                <p class="desc">손목 온도 감지<a href="" class="link-footnote">7</a></p>
+                                <p class="desc">생리 주기 추적 및<br>후향적 배란일 추정<a href="" class="link-footnote">8</a></p>
+                            </div>
+                            <div></div>
+                            <div class="sos">
+                                <span class="ic-sos"></span>
+                                <p class="desc">긴급 구조 요청<a href="" class="link-footnote">12</a></p>
+                                <p class="desc">국제<br>긴급 구조 요청<a href="" class="link-footnote">14</a></p>
+                                <p class="desc">넘어짐 감지 및<br>충돌 감지<a href="" class="link-footnote">12</a></p>
+                                <p class="desc">사이렌</p>
+                            </div>
+                            <div></div>
+                            <div class="waterproof">
+                                <span class="ic-100m"></span>
+                                <p class="desc">방수 등급</p>
+                                <p class="desc">수영 최적화<a href="" class="link-footnote">20</a></p>
+                                <p class="desc">빠른 속도의 수상 및 수중 스포츠</p>
+                                <p class="desc">레크리에이션 다이빙(최대 40m)</p>
+                            </div>
+                            <div></div>
+                            <div class="gps">
+                                <span class="ic-gps"></span>
+                                <p class="desc">정밀<br>이중 주파수 GPS</p>
+                                <p class="desc">셀룰러 탑재<a href="" class="link-footnote">9</a></p>
+                            </div>
+                            <div></div>
+                            <div class="battery">
+                                <span class="ic-battery"></span>
+                                <p class="desc">최대 36시간<a href="" class="link-footnote">21</a></p>
+                                <p class="desc">저전력 모드에서<br>최대 72시간<a href="" class="link-footnote">21</a></p>
+                                <p class="desc">급속 충전<a href="" class="link-footnote">22</a></p>
+                            </div>
+                            <div ></div>
+                        </div>
+                    </div>
+
+                    <div class="link-area">
+                        <a href="" class="link-all">
+                            모든 모델 비교하기
+                            <span class="icon icon-after more"></span>
+                        </a>
+                        <a href="" class="link-shopping">
+                            Apple Watch 쇼핑하기
+                            <span class="icon icon-after more"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer id="footer">
+            <h2 class="blind">애플 푸터</h2>
+
+            <div class="footer-inner">
+                <section class="sc-buy-info">
+                    <h3 class="blind">구입 정보</h3>
+
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <a href="">
+                                <span class="ic-delivery"></span>
+                                <strong class="title">업무일 기준 무료 익일 배송</strong>
+                                <p class="desc">
+                                    오후 3시 이전에 주문된<br>
+                                    재고 보유 제품에 한합니다.
+                                </p>
+                                <span class="more">더 알아보기</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="">
+                                <span class="ic-installment"></span>
+                                <strong class="title">할부 방식</strong>
+                                <p class="desc">
+                                    무이자 할부를 통해 Apple 제품을<br>
+                                    부담 없이 구매하실 수 있습니다.
+                                </p>
+                                <span class="more">더 알아보기</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a href="">
+                                <span class="ic-question"></span>
+                                <strong class="title">도움이 필요하다면</strong>
+                                <p class="desc">
+                                    질문이 있으신가요? 전문가와 전화로<br>
+                                    상담하거나 온라인으로 채팅하세요.<br>
+                                    080-330-8877로 전화 주세요.
+                                </p>
+                                <span class="more">문의하기</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="sc-detail">
+                    <h3 class="blind">제품 세부사항</h3>
+
+                    <ol class="detail-list ol">
+                        <li class="detail-item">2세대 초광대역 칩을 탑재한 iPhone 및 Apple Watch가 필요합니다. 초광대역 기술의 사용 가능 여부는 국가에 따라 다릅니다.</li>
+                        <li class="detail-item"><a href="" class="link">apple.com/kr/2030</a>에서 더 자세히 알아볼 수 있습니다.</li>
+                        <li class="detail-item">탄소 배출량은 다음과 같은 기준치 시나리오를 기반으로 산출됩니다. 1) 이미 갖추어진 인프라를 통해 보급이 가능한 전력량(지역별 탄소 배출량 요인 기준) 외의 청정 전력을 제품 제조 또는 이용과 관련하여 사용하지 않음. 2) 2015년(2030년 제품 탄소 중립 목표의 기준 연도) 기준 Apple 제품에 쓰이는 주요 소재들의 탄소 집약도. 소재의 탄소 집약도는 재활용 자원 및 생산 기술의 사용을 반영함. 3) 제품의 운송 관련 탄소 배출량 기준치를 최대한 정확하게 산출하기 위한 Apple의 3년간(2017회계연도~2019회계연도) 제품 라인별 평균 운송 수단 조합(항공, 철도, 해상, 육상).</li>
+                        <li class="detail-item">Apple Watch는 의료기기가 아닙니다. 심전도 앱은 iOS 최신 버전과 연동되어 있고 watchOS 최신 버전이 설치된 Apple Watch Series 4 이후 모델(Apple Watch SE 제외)에서 이용할 수 있습니다. 호환성 관련 정보는 <a href="" class="link">apple.com/kr/watch</a>에서 확인하십시오. 심전도 앱은 만 22세 미만의 사용자에게는 적합하지 않습니다. Apple Watch는 심전도 앱을 통해 단일 전극 심전도계와 유사한 심전도를 생성할 수 있습니다. 조합-2022-36-042(유효기간: 2025.09.20까지)</li>
+                        <li class="detail-item">불규칙한 박동 알림 기능은 의료기기이며 watchOS 및 iOS 최신 버전이 필요합니다. 만 22세 미만이거나 심방세동을 진단받은 이력이 있는 사용자에게는 적합하지 않습니다. 조합-2022-36-042(유효기간: 2025.09.20까지)</li>
+                        <li class="detail-item">혈중 산소 앱은 오직 건강 지향을 위해 제공되는 것으로 의료 목적을 위한 것이 아닙니다.</li>
+                        <li class="detail-item">손목 온도 감지 기능은 의료 목적으로 사용할 수 없습니다.</li>
+                        <li class="detail-item">생리 주기 추적 앱은 의료기기이며, 사용상의 주의사항과 사용방법을 잘 읽고 사용하세요. 생리 주기 추적 앱을 피임 수단으로 사용할 수 없습니다. 조합-2024-15-030 (유효기간:2027.05.15까지)</li>
+                        <li class="detail-item">셀룰러 서비스를 이용하려면 무선 네트워크 서비스 요금제에 가입해야 합니다. 자세한 내용은 이동통신사에 문의하십시오. 네트워크 이용 가능 여부에 따라 연결 상태는 달라질 수 있습니다. 무선 네트워크 서비스 지원 이동통신사 및 서비스 이용 가능 여부는 <a href="" class="link">apple.com/kr/watch/cellular</a>를 참고하십시오. 추가적인 설정 안내는 <a href="" class="link">support.apple.com/ko-kr/HT207578</a>에서 확인하십시오.</li>
+                        <li class="detail-item">Apple Music 이용을 위해서는 가입이 필요합니다.</li>
+                        <li class="detail-item">일부 국가에서는 Apple Pay를 사용할 수 없습니다. Apple Pay 지원 국가 및 지역 목록은 <a href="" class="link">support.apple.com/ko-kr/HT207957</a>을 참고하십시오.</li>
+                        <li class="detail-item">긴급 구조 요청은 Apple Watch 또는 근처에 있는 iPhone의 셀룰러 연결이 필요합니다.</li>
+                        <li class="detail-item">보상 판매 금액은 양호한 상태의 Apple Watch Series 8 (GPS + Cellular) 모델(스테인리스 스틸 케이스, 45mm)을 대상으로 산정한 금액입니다. 보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 견적은 예상 금액이며 실제 보상 판매 금액은 예상 금액보다 낮을 수 있습니다. 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 기기를 보상 판매 하려면 민법상 성년이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple의 보상 판매 파트너는 보상 판매 거래를 거부, 취소하거나 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다.</li>
+                        <li class="detail-item">Apple Watch Series 7, SE, Ultra 또는 그 이후 모델이 필요합니다. 해당 기능을 지원하는 국가 및 지역의 목록은 <a href="" class="link">apple.com/kr/watchos/feature-availability</a>를 참고하십시오.</li>
+                        <li class="detail-item">Apple Watch SE의 50m 생활 방수는 ISO 표준 22810:2010에 따른 등급으로, 수영장이나 바다에서의 수영 등 수심이 얕은 물에서 하는 활동에 사용될 수 있음을 의미합니다. 단, Apple Watch SE를 스쿠버다이빙과 수상스키, 그 밖에 유속이 빠른 물에서 하는 활동이나 수심 깊이 잠수하는 활동에는 사용할 수 없습니다. 방수 기능은 영구적이지 않으며 시간이 지남에 따라 저하될 수 있습니다. 자세한 내용은 <a href="" class="link">support.apple.com/ko-kr/HT205000</a>을 참고하십시오.</li>
+                        <li class="detail-item">온종일 가는 배터리 성능이란 18시간 동안, 시간 확인 90회, 알림 90건, 앱 사용 45분, Bluetooth를 통해 Apple Watch에서 음악을 재생하는 상태로 운동 기능 60분 사용 등의 조작을 수행한 것을 기준으로 합니다. Apple Watch SE(2세대) (GPS) 모델 사용은 18시간에 걸친 테스트 내내 Bluetooth를 통해 iPhone에 연결한 것을 포함합니다. Apple Watch SE(2세대) (GPS + Cellular) 모델 사용은 18시간에 걸친 테스트 과정에서 총 4시간의 LTE 연결 및 Bluetooth를 통한 iPhone 연결 14시간을 포함합니다. 테스트는 2022년 8월 Apple에서 Apple Watch SE(2세대) (GPS) 모델 및 Apple Watch SE(2세대) (GPS + Cellular) 모델의 시제품을 각각 iPhone과 페어링하여 진행했습니다. 사용된 모든 기기는 배포 전 단계의 소프트웨어를 설치하여 테스트했습니다. 배터리 사용 시간은 사용 패턴, 설정, 셀룰러 네트워크, 신호 강도 등 여러 요인에 따라 다릅니다. 실제 사용 결과는 다를 수도 있습니다.</li>
+                        <li class="detail-item">Apple Watch Series 9의 50m 생활 방수는 ISO 표준 22810:2010에 따른 등급으로, 수영장이나 바다에서의 수영 등 수심이 얕은 물에서 하는 활동에 사용될 수 있음을 의미합니다. 단, Apple Watch Series 9을 스쿠버다이빙과 수상스키, 그 밖에 유속이 빠른 물에서 하는 활동이나 수심 깊이 잠수하는 활동에는 사용할 수 없습니다. 방수 기능은 영구적이지 않으며 시간이 지남에 따라 저하될 수 있습니다. 자세한 내용은 <a href="" class="link">support.apple.com/ko-kr/HT205000</a>을 참고하십시오.</li>
+                        <li class="detail-item">온종일 가는 배터리 성능이란 18시간 동안, 시간 확인 90회, 알림 90건, 앱 사용 45분, Bluetooth를 통해 Apple Watch에서 음악을 재생하는 상태로 운동 기능 60분 사용 등의 조작을 수행한 것을 기준으로 합니다. Apple Watch Series 9 (GPS) 모델 사용은 18시간에 걸친 테스트 내내 Bluetooth를 통해 iPhone에 연결한 것을 포함합니다. Apple Watch Series 9 (GPS + Cellular) 모델 사용은 18시간에 걸친 테스트 과정에서 총 4시간의 LTE 연결 및 Bluetooth를 통한 iPhone 연결 14시간을 포함합니다. 저전력 모드에서의 배터리 성능이란 36시간 동안, 시간 확인 180회, 알림 180건, 앱 사용 90분, Bluetooth를 통해 Apple Watch에서 음악을 재생하는 상태로 운동 기능 60분 사용 등의 조작을 수행한 것을 기준으로 합니다. Apple Watch Series 9 (GPS) 모델 사용은 36시간에 걸친 테스트 내내 Bluetooth를 통해 iPhone에 연결한 것을 포함합니다. Apple Watch Series 9 (GPS + Cellular) 모델 사용은 36시간에 걸친 테스트 과정에서 온디맨드 LTE 연결 및 Bluetooth를 통한 iPhone 연결 28시간을 포함합니다. 테스트는 2023년 8월 Apple에서 Apple Watch Series 9 (GPS) 모델 및 Apple Watch Series 9 (GPS + Cellular) 모델의 시제품을 각각 iPhone과 페어링하여 진행했습니다. 사용된 모든 기기는 배포 전 단계의 소프트웨어를 설치하여 테스트했습니다. 배터리 사용 시간은 사용 패턴, 설정, 셀룰러 네트워크, 신호 강도 등 여러 요인에 따라 다릅니다. 실제 사용 결과는 다를 수도 있습니다.</li>
+                        <li class="detail-item">위에 명시한 충전 시간은 제품 구매 시 함께 제공되는 Apple Watch 마그네틱 급속 충전 USB‑C 케이블을 사용해 각각 0%에서 80%, 0%에서 100% 충전까지 걸린 시간입니다. 테스트는 2023년 8월 Apple에서 Apple Watch Series 9 (GPS) 모델 및 Apple Watch Series 9 (GPS + Cellular) 모델의 시제품을 각각 iPhone과 페어링하여 진행했습니다. 사용된 모든 기기는 배포 전 단계의 소프트웨어를 설치하여 Apple Watch 마그네틱 급속 충전 USB‑C 케이블(모델 A2515)과 Apple 20W USB‑C 전원 어댑터(모델 A2305)로 테스트했습니다. 충전 시간은 국가, 설정 및 여러 환경 요인에 따라 다릅니다. 실제 사용 결과는 다를 수도 있습니다.</li>
+                        <li class="detail-item">Apple Watch Ultra 2의 100m 생활 방수는 ISO 표준 22810에 따른 등급으로, 최대 수심 40m의 레크리에이션 스쿠버다이빙(Appe Store에 있는 호환되는 서드파티 앱과 함께 사용)과 빠른 속도의 워터 스포츠에 사용할 수 있습니다. Apple Watch Ultra 2는 수심 40m보다 더 깊게 내려가는 다이빙에는 사용할 수 없습니다. 방수 기능은 영구적이지 않으며 시간이 지남에 따라 저하될 수 있습니다. 자세한 내용은 <a href="" class="link">support.apple.com/ko-kr/HT205000</a>을 참고하십시오.</li>
+                        <li class="detail-item">온종일 가는 배터리 성능이란 36시간 동안, 시간 확인 180회, 알림 180건, 앱 사용 90분, Bluetooth를 통해 Apple Watch에서 음악을 재생하는 상태로 운동 기능 60분 사용 등의 조작을 수행한 것을 기준으로 합니다. Apple Watch Ultra 2 (GPS + Cellular) 모델 사용은 36시간에 걸친 테스트 과정에서 총 8시간의 LTE 연결 및 Bluetooth를 통한 iPhone 연결 28시간을 포함합니다. 저전력 모드에서의 배터리 성능이란 72시간 동안, 시간 확인 360회, 알림 360건, 앱 사용 180분, Bluetooth를 통해 Apple Watch에서 음악을 재생하는 상태로 두 종류의 운동 기능 60분씩 사용 등의 조작을 수행한 것을 기준으로 합니다. Apple Watch Ultra 2 (GPS + Cellular) 모델 사용은 72시간에 걸친 테스트 과정에서 온디맨드 LTE 연결 및 Bluetooth를 통한 iPhone 연결 60시간을 포함합니다. 테스트는 2023년 8월 Apple에서 Apple Watch Ultra 2 (GPS + Cellular) 모델의 시제품을 iPhone과 페어링하여 진행했습니다. 사용된 모든 기기는 배포 전 단계의 소프트웨어를 설치하여 테스트했습니다. 배터리 사용 시간은 사용 패턴, 설정, 셀룰러 네트워크, 신호 강도 등 여러 요인에 따라 다릅니다. 실제 사용 결과는 다를 수도 있습니다.</li>
+                        <li class="detail-item">위에 명시한 충전 시간은 제품 구매 시 함께 제공되는 Apple Watch 마그네틱 급속 충전 USB‑C 케이블을 사용해 각각 0%에서 80%, 0%에서 100% 충전까지 걸린 시간입니다. 테스트는 2023년 8월 Apple에서 Apple Watch Ultra 2 (GPS + Cellular) 모델의 시제품을 iPhone과 페어링하여 진행했습니다. 사용된 모든 기기는 배포 전 단계의 소프트웨어를 설치하여 Apple Watch 마그네틱 급속 충전 USB‑C 케이블(모델 A2515)과 Apple 20W USB‑C 전원 어댑터(모델 A2305)로 테스트했습니다. 충전 시간은 국가, 설정 및 여러 환경 요인에 따라 다릅니다. 실제 사용 결과는 다를 수도 있습니다.</li>
+                    </ol>
+                    <ul class="detail-list">
+                        <li class="detail-item">케이스 및 밴드 조합은 각 컬렉션(Apple Watch, Apple Watch Hermès) 내에서만 가능합니다.</li>
+                        <li class="detail-item">Apple Watch Ultra 2, Apple Watch Series 9 및 Apple Watch SE는 iOS 17 이후 버전이 설치된 iPhone Xs 이후 모델이 필요합니다.</li>
+                        <li class="detail-item">기능은 변경될 수 있습니다. 일부 기능, 애플리케이션 및 서비스를 이용할 수 없는 국가나 언어도 있습니다. 전체 <a href="" class="link">목록</a> 보기.</li>
+                        <li class="detail-item">밴드 판매는 재고에 한합니다.</li>
+                    </ul>
+                </section>
+
+                <nav class="apple-menu">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="">
+                                <img src="./assets/images/ic-home.png" alt="홈메뉴" class="home">
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="">Watch</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="">Apple Watch Series 9</a>
+                        </li>
+                    </ol>
+
+                    <div class="category">
+                        <div class="column">
+                            <div class="category-menu">
+                                <strong class="title">쇼핑 및 알아보기</strong>
+                                <button class="btn-list">
+                                    <span>쇼핑 및 알아보기</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">스토어</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Mac</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">iPad</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">iPhone</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Watch</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">AirPods</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">TV 및 홈</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">AirTag</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">액세서리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-menu bottom">
+                                <strong class="title">Apple 지갑</strong>
+                                <button class="btn-list">
+                                    <span>Apple 지갑</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">지갑</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Pay</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="category-menu">
+                                <strong class="title">계정</strong>
+                                <button class="btn-list">
+                                    <span>계정</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">Apple ID 관리</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Store 계정</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">iCloud.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-menu bottom">
+                                <strong class="title">엔터테인먼트</strong>
+                                <button class="btn-list">
+                                    <span>엔터테인먼트</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">Apple One</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple TV+</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Music</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Arcade</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Podcasts</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Books</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">App Store</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="category-menu">
+                                <strong class="title">Apple Store</strong>
+                                <button class="btn-list">
+                                    <span>Apple Store</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">매장 찾기</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Genius Bar</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Today at Apple</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">그룹 예약</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple 캠프</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Store 앱</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">인증 리퍼비쉬 제품</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple Trade In</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">할부 방식</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">주문 상태</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">쇼핑 도움말</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="category-menu">
+                                <strong class="title">비즈니스</strong>
+                                <button class="btn-list">
+                                    <span>비즈니스</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">Apple과 비즈니스</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">비즈니스를 위한 제품 쇼핑하기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-menu bottom">
+                                <strong class="title">교육</strong>
+                                <button class="btn-list">
+                                    <span>교육</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">Apple과 교육</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">초중고용 제품 쇼핑하기</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">대학 생활을 위한 제품 쇼핑하기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="category-menu">
+                                <strong class="title">Apple의 가치관</strong>
+                                <button class="btn-list">
+                                    <span>Apple의 가치관</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">손쉬운 사용</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">교육</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">환경</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">개인정보 보호</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">공급망</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-menu bottom">
+                                <strong class="title">Apple 정보</strong>
+                                <button class="btn-list">
+                                    <span>Apple 정보</span>
+                                    <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
+                                        <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="10.075 0.675 5.5 5.323 0.925 0.675">
+                                            <animate data-footer-animate="expand" attributeName="points" values="10.075 0.675 5.5 5.323 0.925 0.675;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 5.325 5.5 0.676 0.925 5.325" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                            <animate data-footer-animate="collapse" attributeName="points" values="10.075 5.325 5.5 0.676 0.925 5.325;
+                                                        10.075 3 5.5 3 0.925 3;
+                                                        10.075 0.675 5.5 5.323 0.925 0.675" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                                        0.5;
+                                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                                            0.2, 1, 0.68, 1"></animate>
+                                        </polyline>
+                                    </svg>
+                                </button>
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="">Newsroom</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple 리더십</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">채용 안내</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">윤리 및 규정 준수</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">이벤트</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">일자리 창출</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="">Apple 연락처</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="desc">다양한 쇼핑 방법:<a href="" class="link"> Apple Store를 방문</a>하거나, <a href="" class="link">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.</p>
+                </nav>
+
+                <section class="sc-policy">
+                    <h3 class="blind">약관 및 방침</h3>
+
+                    <div class="left">
+                        <small class="copy">Copyright © 2024 Apple Inc. 모든 권리 보유.</small>
+
+                        <ul class="policy-list">
+                            <li class="policy-item">
+                                <a href="">개인정보 처리방침</a>
+                            </li>
+                            <li class="policy-item">
+                                <a href="">웹 사이트 이용 약관</a>
+                            </li>
+                            <li class="policy-item">
+                                <a href="">판매 및 환불</a>
+                            </li>
+                            <li class="policy-item">
+                                <a href="">법적 고지</a>
+                            </li>
+                            <li class="policy-item">
+                                <a href="">사이트 맵</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right">
+                        <a href="" class="link-nation" title="국가 또는 지역을 선택하세요.">대한민국</a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
